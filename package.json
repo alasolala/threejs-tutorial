@@ -1,0 +1,25 @@
+{
+  "name": "threejs-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=8081"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicsoso/threejs-tutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magicsoso/threejs-tutorial/issues"
+  },
+  "homepage": "https://github.com/magicsoso/threejs-tutorial#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "three": "^0.126.1"
+  }
+}
