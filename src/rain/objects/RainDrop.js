@@ -31,7 +31,7 @@ export default class RainDrop {
       positions.push( Math.random() * 400 - 200 )
       positions.push( Math.random() * 500 - 250 )
       positions.push( Math.random() * 400 - 200 )
-      this.velocityY.push(0.2 + Math.random() / 3)
+      this.velocityY.push(0.5 + Math.random() / 2)
     }
     this.geom.setAttribute( 'position', new Float32BufferAttribute( positions, 3 ) )
     this.instance = new Points(this.geom, material)
@@ -42,11 +42,11 @@ export default class RainDrop {
     const positions = this.geom.attributes.position.array;
     
     for(let i=0; i<this.drops * 3; i+=3){ //change Y
-      this.velocityY[i/3] += Math.random() * 0.02
+      this.velocityY[i/3] += Math.random() * 0.05
       positions[ i + 1 ] -=  this.velocityY[i/3]
       if(positions[ i + 1 ] < -200){
         positions[ i + 1 ] =  200
-        this.velocityY[i/3] = 0
+        this.velocityY[i/3] = 0.5 + Math.random() / 2
       } 									
     }
     this.instance.rotation.y += 0.002
