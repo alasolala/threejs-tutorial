@@ -4,22 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server --port=8081"
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack-dev-server --config webpack.dev.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/magicsoso/threejs-tutorial.git"
   },
-  "author": "",
+  "author": "Alaso",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/magicsoso/threejs-tutorial/issues"
   },
   "homepage": "https://github.com/magicsoso/threejs-tutorial#readme",
-  "devDependencies": {
-    "live-server": "^1.2.1"
-  },
   "dependencies": {
     "three": "^0.126.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^6.0.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^4.3.0",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.2"
   }
 }
