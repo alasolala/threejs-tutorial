@@ -46,7 +46,7 @@ export default class FrontWall extends Base{
       bevelSegments: 2, 
       steps: 2, 
       bevelSize: 1, 
-      bevelThickness: 1 
+      bevelThickness: 5 
     };
 
     const geometry = new ExtrudeGeometry( shape, extrudeSettings );

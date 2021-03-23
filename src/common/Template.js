@@ -27,7 +27,7 @@ export default class Template {
       this.PCamera.fov,
       this.PCamera.aspect,
       this.PCamera.near,
-      this.PCamera.far,
+      this.PCamera.far
     )
     camera.position.copy(this.cameraPostion)
     camera.lookAt(this.cameraLookAt)
@@ -40,7 +40,9 @@ export default class Template {
   }
 
   initRenderer () {
-    const renderer = new WebGLRenderer()
+    const renderer = new WebGLRenderer({
+      antialias: true
+    })
     renderer.setClearColor(this.rendererColor)
     renderer.setSize(this.rendererWidth, this.rendererHeight)
     this.el.appendChild(renderer.domElement)

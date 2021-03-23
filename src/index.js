@@ -1,1 +1,2 @@
-import './rain/main'
+// import './rain/main'
+import './room/main'

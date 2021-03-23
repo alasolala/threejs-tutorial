@@ -1,0 +1,90 @@
+# Blender MTL File: 'indoor plant_02.blend'
+# Material Count: 7
+
+newmtl IDP_Pot
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\indoor plant_2_NOR.jpg
+map_Bump  textures\\indoor plant_2_NOR.jpg
+map_Ks  textures\\indoor plant_2_COL.jpg
+
+newmtl IDP_ground
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd textures\indoor plant_2_NOR.jpg
+map_Bump  textures\\indoor plant_2_NOR.jpg
+
+newmtl IDP_leaves
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\indoor plant_2_COL.jpg
+map_Bump  textures\\indoor plant_2_NOR.jpg
+map_Ks  textures\\indoor plant_2_COL.jpg
+
+newmtl IDP_leaves_indoor_plant_2_NOR.jpg
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.200000 0.200000 0.200000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\indoor plant_2_NOR.jpg
+map_Bump  textures\\indoor plant_2_NOR.jpg
+map_Ks  textures\\indoor plant_2_COL.jpg
+
+newmtl IDP_root
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.328250 0.328250 0.328250
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\indoor plant_2_COL.jpg
+map_Bump  textures\\indoor plant_2_NOR.jpg
+map_Ks  textures\\indoor plant_2_COL.jpg
+
+newmtl IDP_root_indoor_plant_2_NOR.jpg
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.328250 0.328250 0.328250
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd textures\indoor plant_2_NOR.jpg
+map_Bump  textures\\indoor plant_2_NOR.jpg
+map_Ks  textures\\indoor plant_2_COL.jpg
+
+newmtl Material.006
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 1
+map_Kd textures\p2.png
