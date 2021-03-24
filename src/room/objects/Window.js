@@ -64,7 +64,7 @@ export default class Window extends Base{
     shape.holes.push(hole_2)
   
     const extrudeSettings = { 
-      amount: 8, 
+      depth: 8, 
       bevelEnabled: true, 
       bevelSegments: 2, 
       steps: 2, 

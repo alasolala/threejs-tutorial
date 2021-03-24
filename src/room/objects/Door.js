@@ -70,7 +70,7 @@ export default class Door extends Base{
     shape.holes.push(door)
 
     const extrudeSettings = { 
-      amount: 8, 
+      depth: 8, 
       bevelEnabled: true, 
       bevelSegments: 2, 
       steps: 2, 

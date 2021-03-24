@@ -34,7 +34,7 @@ export default class Vase extends Base{
     shape.holes.push(hollow)
 
     const extrudeSettings = { 
-      amount: 20, 
+      depth: 20, 
       bevelEnabled: true, 
       bevelSegments: 8, 
       steps: 2, 
