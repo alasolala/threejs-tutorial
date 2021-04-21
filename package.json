@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server --config webpack.dev.js"
+    "monitor": "webpack --config webpack.monitor.js",
+    "dll": "webpack --config webpack.dll.js"
   },
   "repository": {
     "type": "git",
@@ -19,17 +21,29 @@
   "homepage": "https://github.com/magicsoso/threejs-tutorial#readme",
   "dependencies": {
     "dat.gui": "^0.7.7",
+    "monitor": "^0.6.10",
     "three": "^0.126.1"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
     "@babel/preset-env": "^7.13.10",
     "babel-loader": "^8.2.2",
+    "cache-loader": "^4.1.0",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "compression-webpack-plugin": "^1.1.12",
     "copy-webpack-plugin": "^6.0.3",
     "file-loader": "^6.2.0",
+    "glob": "^7.1.6",
+    "happypack": "^5.0.1",
+    "hard-source-webpack-plugin": "^0.13.1",
     "html-webpack-plugin": "^4.3.0",
+    "speed-measure-webpack-plugin": "^1.5.0",
+    "thread-loader": "^3.0.3",
     "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "webpackbar": "^5.0.0-3"
   }
 }
