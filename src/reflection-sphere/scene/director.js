@@ -1,4 +1,10 @@
-import { Vector3, WebGLCubeRenderTarget, CubeCamera, RGBFormat, LinearMipmapLinearFilter } from 'three'
+import { 
+  Vector3, 
+  WebGLCubeRenderTarget, 
+  CubeCamera, 
+  RGBFormat, 
+  LinearMipmapLinearFilter
+} from 'three'
 import Template from "../../common/Template"
 import { addOrbitControls } from "../control/orbitControls"
 import { initBox } from "../objects/Box"
@@ -9,14 +15,12 @@ export default class Director extends Template{
 
     //set params
     //camera
-    this.PCamera.fov = 70
-    this.cameraPostion = new Vector3(0, 400, 1000)
+    this.PCamera.fov = 65
+
+    this.cameraPostion = new Vector3(0, 40, 100)
 
     //init camera/scene/render
     this.init()
-    this.camera.rotation.x = 1.16
-    this.camera.rotation.y = -0.12
-    this.camera.rotation.z = 0.27
 
     //add controls
     addOrbitControls(this.camera, this.renderer.domElement)
@@ -28,12 +32,11 @@ export default class Director extends Template{
       minFilter: LinearMipmapLinearFilter
     } );
     this.cubeCamera = new CubeCamera(1, 1000, cubeRenderTarget)
-    this.cubeCamera.position.set(0, 100, 0)
+    this.cubeCamera.position.set(0, 0, 0)
     this.scene.add(this.cubeCamera)
 
     //add object
     initBox(this.scene)
-    console.log(this.cubeCamera)
     initSphere(this.scene, this.cubeCamera)
 
     //animate

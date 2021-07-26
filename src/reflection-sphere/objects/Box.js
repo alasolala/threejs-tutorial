@@ -1,15 +1,19 @@
-import { CubeTextureLoader } from "three";
+import { 
+  CubeTextureLoader
+} from "three";
 
 export function initBox (scene) {
   const urls = [
-    '../../images/reflection-sphere/posx.jpg',
-    '../../images/reflection-sphere/negx.jpg',
-    '../../images/reflection-sphere/posy.jpg',
-    '../../images/reflection-sphere/negy.jpg',
-    '../../images/reflection-sphere/posz.jpg',
-    '../../images/reflection-sphere/negz.jpg'
+    '1.jpg',
+    '2.jpg',
+    '3.jpg',
+    '4.jpg',
+    '5.jpg',
+    '6.jpg'
 
   ]
   const loader = new CubeTextureLoader()
-  scene.background = loader.load(urls)
+  const cubeMap = loader.setPath('../../images/reflection-sphere/').load(urls)
+  
+  scene.background = cubeMap
 }
