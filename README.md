@@ -19,10 +19,5 @@ npm run dll
 npm run build
 ```
 
-### 博客地址：
+![image](https://user-images.githubusercontent.com/13481407/181496035-78e6a499-af4b-4371-920d-25c49d3c96e8.png)
 
-下雨动画：https://juejin.cn/post/6940542710709223432
-
-微场景：  https://juejin.cn/post/6942910177347633165
-
-反光球： https://juejin.cn/post/6989109490285019172
